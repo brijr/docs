@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { PageObjectResponse } from "@notionhq/client/build/src/api-endpoints";
 import { cache } from "react";
 
+export const revalidate = 4000;
+
 const getPage = cache(async (id: string) => {
   const recordMap = await notionCustom.getPage(id);
 

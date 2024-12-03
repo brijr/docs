@@ -1,19 +1,12 @@
-import Link from "next/link";
+import { DocsPage } from "fumadocs-ui/page";
 
 export default async function HomePage() {
   return (
-    <main className="flex flex-1 flex-col justify-center text-center">
-      <h1 className="mb-4 text-2xl font-bold">Hello World</h1>
-      <p className="text-fd-muted-foreground">
-        You can open{" "}
-        <Link
-          href="/docs"
-          className="text-fd-foreground font-semibold underline"
-        >
-          /docs
-        </Link>{" "}
-        and see the documentation.
+    <DocsPage>
+      <h1>Bridger Tower / Designer and Developer</h1>
+      <p className="text-muted-foreground">
+        Welcome to a collection of notes and ideas about design and development.
       </p>
-    </main>
+    </DocsPage>
   );
 }

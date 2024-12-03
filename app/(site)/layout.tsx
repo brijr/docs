@@ -18,7 +18,7 @@ export default async function Layout({ children }: { children: ReactNode }) {
 
   return (
     <DocsLayout tree={buildPageTree(response)} {...baseOptions}>
-      {children}
+      <main className="w-full">{children}</main>
     </DocsLayout>
   );
 }

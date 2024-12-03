@@ -12,6 +12,7 @@ export const notion = new Client({ auth: apiKey });
 /**
  * Non-official client used for react-notion-x
  */
+
 export const notionCustom = new NotionCompatAPI(notion);
 
 export interface PageInfo {
