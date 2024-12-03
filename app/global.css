@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import Prism CSS for code highlighting */
-@import "prismjs/themes/prism.css";
+/* Import only the dark theme for consistency */
 @import "prismjs/themes/prism-tomorrow.css";
 
 .notion-simple-table {
@@ -12,11 +11,42 @@
 
 /* Style code blocks */
 .notion-code {
-  @apply my-4 overflow-auto rounded-lg;
+  @apply my-4 overflow-auto rounded-lg bg-[#2d2d2d] !important;
 }
 
 .notion pre {
-  @apply p-4;
+  @apply p-4 m-0;
+}
+
+/* Override Prism styles for better visibility */
+.notion code {
+  @apply text-sm font-mono;
+  background: none !important;
+  text-shadow: none !important;
+}
+
+.notion .token.comment {
+  @apply text-gray-500;
+}
+
+.notion .token.string {
+  @apply text-emerald-300;
+}
+
+.notion .token.keyword {
+  @apply text-purple-300;
+}
+
+.notion .token.function {
+  @apply text-blue-300;
+}
+
+.notion .token.number {
+  @apply text-orange-300;
+}
+
+.notion .token.operator {
+  @apply text-gray-300;
 }
 
 .dark .notion {
