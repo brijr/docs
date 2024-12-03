@@ -1,6 +1,6 @@
 import "./global.css";
 import { RootProvider } from "fumadocs-ui/provider";
-import { Inter as Font } from "next/font/google";
+import { Manrope as Font } from "next/font/google";
 import type { ReactNode } from "react";
 
 const font = Font({
