@@ -5,7 +5,7 @@ export default async function HomePage() {
     <DocsPage>
       <h1>Bridger Tower / Designer and Developer</h1>
       <p className="text-muted-foreground">
-        Welcome to a collection of notes and ideas about design and development.
+        Collection of notes and ideas about design and development.
       </p>
     </DocsPage>
   );
