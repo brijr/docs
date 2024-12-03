@@ -2,8 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import Prism CSS for code highlighting */
+@import 'prismjs/themes/prism.css';
+@import 'prismjs/themes/prism-tomorrow.css';
+
 .notion-simple-table {
   @apply w-full;
+}
+
+/* Style code blocks */
+.notion-code {
+  @apply my-4 overflow-auto rounded-lg;
+}
+
+.notion pre {
+  @apply p-4;
 }
 
 .dark .notion {
